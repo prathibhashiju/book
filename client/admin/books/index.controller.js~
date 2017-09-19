@@ -1,0 +1,25 @@
+﻿(function () {
+    'use strict';
+
+    angular
+        .module('app')
+        .controller('Books.IndexController', Controller);
+
+    function Controller(BookService) {
+        var vm = this;
+
+        vm.books = [];
+
+        initController();
+
+        function initController() {
+            vm.loading = true;
+            BookService.GetAll()
+                .then(function (books) {
+                    vm.loading = false;
+                    vm.books = books;
+                });
+        }
+    }
+
+})();

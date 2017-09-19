@@ -58,6 +58,7 @@
     <script src="_services/user.service.js"></script>
     <script src="_services/data.service.js"></script>
     <script src="_services/alert.service.js"></script>
+    <script src="_services/page.service.js"></script>
     <script src="_services/book.service.js"></script> 
     <script src="books/index.controller.js"></script>
     <script src="books/add-edit.controller.js"></script>

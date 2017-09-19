@@ -41,7 +41,7 @@ app.get('/token', function (req, res) {
 });
 
 // standalone pages
-app.use('/register', require('./controllers/register.controller'));
+app.use('/install', require('./controllers/install.controller'));
 app.use('/login', require('./controllers/login.controller'));
 // admin section
 app.use('/admin', require('./controllers/admin.controller'));
